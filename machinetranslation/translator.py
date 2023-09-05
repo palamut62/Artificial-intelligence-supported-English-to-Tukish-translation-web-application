@@ -10,7 +10,7 @@ def english_to_french(english_text):
     Returns:
     str: Translated text in French
     """
-    return MyMemoryTranslator(source='english', target='french').translate(english_text)
+    return MyMemoryTranslator(source='english', target='turkish').translate(english_text)
 
 def french_to_english(french_text):
     """
@@ -22,4 +22,4 @@ def french_to_english(french_text):
     Returns:
     str: Translated text in English
     """
-    return MyMemoryTranslator(source='french', target='english').translate(french_text)
+    return MyMemoryTranslator(source='turkish', target='english').translate(french_text)
