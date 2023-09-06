@@ -25,13 +25,13 @@ def french_to_english(french_text):
     return MyMemoryTranslator(source='turkish', target='english').translate(french_text)
 def text_to_speech(text):
     """
-    Function to translate French text to English.
+    Function to translate  text to speech.
 
     Parameters:
-    french_text (str): Text in French to be translated to English
+    text (str): Text to be translated to speech
 
     Returns:
-    str: Translated text in English
+    str: Translated text in speech
     """
 
     # Seslendirmek istediğin metin
@@ -44,4 +44,4 @@ def text_to_speech(text):
     tts.save("merhaba.mp3")
 
     # Ses dosyasını oynat (Linux ve MacOS için)
-    os.system("start merhaba.mp3")
+    os.system("start /c merhaba.mp3")
