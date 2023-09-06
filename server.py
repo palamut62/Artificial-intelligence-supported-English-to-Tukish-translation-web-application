@@ -19,8 +19,8 @@ def frenchToEnglish():
 
 @app.route("/texttospeech")
 def texttospeech():
-    text_to_speech = request.args.get('translated_text')
-    return translator.text_to_speech(text_to_speech)
+    text_to_speech1 = request.args.get('translated_text')
+    return translator.text_to_speech(text_to_speech1)
 
 @app.route("/")
 def index():
