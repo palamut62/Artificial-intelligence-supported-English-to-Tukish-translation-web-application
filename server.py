@@ -17,6 +17,11 @@ def frenchToEnglish():
 
     return translated_text
 
+@app.route("/texttospeech")
+def texttospeech():
+    textToTranslate = request.args.get('translated_text')
+    return translator.text_to_speech(textToTranslate)
+
 @app.route("/")
 def index():
     # Write the code to render template
