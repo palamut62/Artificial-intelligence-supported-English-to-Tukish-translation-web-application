@@ -44,4 +44,4 @@ def text_to_speech(text):
     tts.save("merhaba.mp3")
 
     # Ses dosyasını oynat (Linux ve MacOS için)
-    os.system("start /c merhaba.mp3")
+    os.system("merhaba.mp3")
